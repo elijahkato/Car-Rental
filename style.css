@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+/* global presets */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+th {
+    font-family: "Merriweather", serif;
+}
+
+p,
+li,
+a,
+button,
+input,
+td {
+    font-family: "Inter", serif;
+}
+
+.nav--bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 6rem;
+    padding: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+}
+
+.nav--bar img {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 100%;
+}
+
+.nav--bar ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav--bar ul a {
+    color: #830c0c;
+    text-decoration: none;
+}
+
+.nav--bar a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+/* Hero Section */
+#hero--section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    padding: 4rem;
+    gap: 2rem;
+    /* margin: 3rem;
+    border-radius: 1rem; */
+
+}
+
+#hero--section h1 {
+    color: white;
+    font-size: 3rem;
+    max-width: 50rem;
+    line-height: 4rem;
+    text-align: center;
+
+}
+
+#hero--section h2 {
+    color: white;
+    font-size: 2rem;
+    max-width: 50rem;
+    line-height: 4rem;
+    text-align: center;
+
+}
+
+#hero--section p {
+    color: white;
+    font-size: 0.7rem;
+    max-width: 50rem;
+    line-height: 1rem;
+    text-align: justify;
+}
+
+#hero--section button {
+    background-color: #0e0c83;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    max-width: 40rem;
+    width: 100%;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s;
+}
+
+#hero--section button:hover {
+    background-color: rgb(31, 170, 38);
+    color: rgb(4, 67, 61);
+    cursor: pointer;
+}
+
+/* Services Section Styles */
+.services--section {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+.services--section h2 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.services-boxes {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+
+}
+
+.single-service-box {
+    border: 1px solid #737171;
+    padding: 1rem;
+    border-radius: 1.2rem;
+    width: 25rem;
+
+}
+
+.single-service-box img {
+    width: 40rem;
+    height: 15rem;
+    object-fit: cover;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
+.single-service-box h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.single-service-box p {
+    margin-bottom: 1.2rem;
+    color: grey;
+}
+
+.single-service-box button {
+    background-color: #0e0c83;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s;
+
+}
+
+
+/* Outlet Section */
+
+#outlet--section h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+#outlet--section p {
+    text-align: center;
+    font-size: 1rem;
+    color: grey;
+    margin-bottom: 2rem;
+}
+
+table {
+    width: 100%;
+    max-width: 60rem;
+    margin-inline: auto;
+    text-align: left;
+    border: 1px solid rgb(91, 89, 89);
+    border-radius: 8px;
+}
+
+tr {
+    outline: 1px solid rgb(91, 89, 89);
+
+}
+
+th,
+td {
+    padding: 1rem;
+    outline: 1px solid #0e0c83;
+}
+
+/* footer styling */
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: black;
+    margin: 2rem;
+    text-align: center;
+}
+
+footer p {
+    color: grey;
+    font-weight: 200;
+    font-style: italic;
+}
+
+/* 
+body {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    font-size: 16px;
+    margin-top: 20px;
+    position: relative;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+nav {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    height: 20vh;
+   
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    display: inline-block;
+}
+
+nav ul {
+    list-style: none;
+    
+}
+
+nav ul li {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+
+}
+
+nav img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+} */
